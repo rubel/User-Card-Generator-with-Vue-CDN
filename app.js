@@ -7,6 +7,7 @@ var app = Vue.createApp({
             gender:"male",
             cell:"01912429159",
             dob: "1987-03-27",
+            age: 36,
             location: "Dhaka, Bangladesh",
             image:"https://randomuser.me/api/portraits/men/10.jpg"
         }
@@ -23,9 +24,13 @@ var app = Vue.createApp({
             this.email = user.email;
             this.gender = user.gender;
             this.cell = user.cell;
+            this.age = user.dob.age;
             this.dob =  user.dob.date;
             this.location = `${user.location.city}, ${user.location.country}`;
             this.image = user.picture.large;
+        },
+        increaseAge(){
+            this.age++;
         }
     }
 });

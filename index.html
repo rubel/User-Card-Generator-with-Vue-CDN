@@ -14,6 +14,8 @@
         <h3>{{email}}</h3>
         <h3>Cell: {{cell}}</h3>
         <h3>DOB: {{dob}}</h3>
+        <h3>Age:{{age}} <button style="width: 28px; height: 28px; padding: 4px" :onClick="increaseAge">+</button></h3>
+        
         <h3>From: {{location}}</h3>
         <button :onClick="getUser" :class="gender">Get Random User</button>
     </div>
